@@ -1,0 +1,396 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"hi",
+				"hide〔function〕"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"s",
+				"stylesheet"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"index",
+				"indexNologin.php"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"j",
+				"jquery.cookie.js"
+			],
+			[
+				"st",
+				"stop"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"countd",
+				"countdown_showcalltime"
+			],
+			[
+				"sty",
+				"style\t Style CSS"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"colo",
+				"color\t = 'initial' Style CSS"
+			],
+			[
+				"boder",
+				"border"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"xep",
+				"xephangSinhHieu.js"
+			],
+			[
+				"he",
+				"height\t = 'inherit' Style CSS"
+			],
+			[
+				"conso",
+				"console.log(\"stop"
+			],
+			[
+				"div",
+				"divId"
+			],
+			[
+				"di",
+				"divId"
+			],
+			[
+				"high",
+				"height"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"Ip",
+				"IPView"
+			],
+			[
+				"sp",
+				"split"
+			],
+			[
+				"cal",
+				"showCallBN"
+			],
+			[
+				"ten",
+				"TenBenhNhan"
+			],
+			[
+				"in",
+				"inforBn"
+			],
+			[
+				"ba",
+				"barcodescan"
+			],
+			[
+				"p",
+				"placeholder\tAttr"
+			],
+			[
+				"li",
+				"list_tiepnhan_ID"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"al",
+				"alert"
+			],
+			[
+				"cl",
+				"ip_client"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 260.0,
+		"last_filter": "instal",
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Install Package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 544.0
+	},
+	"console":
+	{
+		"height": 130.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/X/tools-his.sublime-project",
+		"/X/modules/xephang/danhsachxephang_viewbacsy/controller.php",
+		"/X/modules/xephang/danhsachxephangsinhhieu_viewbenhnhan/checkin_info.php",
+		"/X/assets/js/jQuery-Scanner-Detection-master/jquery.scannerdetection.js",
+		"/X/assets/js/jQuery-Scanner-Detection/jquery.scannerdetection.js",
+		"/X/modules/xephang/danhsachxephangsinhhieu_viewbenhnhan/index.php",
+		"/X/modules/xephang/danhsachxephang_viewbacsy/index.php",
+		"/X/abc/git-abc-usage",
+		"/X/modules/loginGuess/index.php",
+		"/X/assets/css/bootstrap-4-dev/dist/css/xxx.css",
+		"/C/Users/tmk001-dn-la/Desktop/div_displaydemo.html",
+		"/X/modules/login/login_controlerNologin.php",
+		"/X/modules/login/login_controler.php",
+		"/X/modules/login/indexNologin.php",
+		"/X/modules/xephang/demo/index.php",
+		"/X/index.php",
+		"/X/class/basic_function.php",
+		"/X/modules/demo/div-float",
+		"/X/modules/xephang/danhsachxephang_viewbacsy2/index.php",
+		"/X/modules/loginGuess/login_controler.php",
+		"/X/modules/login/index.php",
+		"/X/autoON_ToolXepHang",
+		"/X/assets/js/custom.js",
+		"/X/class/print_applet/basic_function.php",
+		"/X/modules/xephang/danhsachxephang_viewbenhnhan/index.php",
+		"/C/Users/tmk001-dn-la/Desktop/autoON_ToolXepHang.bat",
+		"/X/modules/xephang/danhsachxephang_viewbenhnhan/checkin_info.php",
+		"/C/Users/tmk001-dn-la/Desktop/countdown.html",
+		"/X/modules/xephang/danhsachxephang/index.php",
+		"/C/Users/tmk001-dn-la/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc.defaults.json",
+		"/X/assets/js/jQuery-Scanner-Detection-master/scannerdetection.jquery.json",
+		"/X/assets/css/bootstrap-3.3.4/bootstrap.min.css",
+		"/X/assets/css/bootstrap-4-dev/dist/css/boostrap-me.css",
+		"/X/assets/js/free-jqgrid/ui.jqgrid.css",
+		"/X/jquery.jqgrid.src.js",
+		"/D/Downloads/FlipClock-master/FlipClock-master/examples/base.html",
+		"/X/modules/xephang/demo/index",
+		"/X/nodejs/xephang.js",
+		"/X/nodejs/xephangSinhHieu.js",
+		"/X/modules/xephang/danhsachxephang_viewbacsy2/index - Copy.php",
+		"/X/nodejs/xephangbenhnhan.js",
+		"/X/modules/xephang/danhsachxephang_viewbenhnhan/4.13.5.js.jquery.jqgrid.min.js",
+		"/X/assets/js/jqGrid-master/dist/jquery.jqgrid.src.js",
+		"/X/nodejs/server.js",
+		"/X/nodejs/serverbenhnhan.js",
+		"/X/modules/xephang/danhsachxephang_viewbacsy2/checkin_info.php",
+		"/D/xampp/htdocs/his/modules/xephang/danhsachxephang2/index.php",
+		"/D/xampp/htdocs/his/nodejs/server.js",
+		"/D/xampp/htdocs/his/git_example/danhsachxephang/index.php",
+		"/D/xampp/htdocs/his/index.php",
+		"/D/xampp/htdocs/his/nodejs/xephang.js",
+		"/D/xampp/htdocs/his/modules/xephang/danhsachxephang2/timer.jquery.min.js",
+		"/X/timer.jquery.min.js",
+		"/X/modules/xephang/danhsachxephang_viewbacsy2/jQuery-Scanner-Detection-master/CHANGELOG.txt",
+		"/X/modules/xephang/danhsachxephang_viewbacsy2/jQuery-Scanner-Detection-master/jquery.scannerdetection.js",
+		"/C/Users/tmk001-dn-la/Desktop/test.js",
+		"/C/Users/tmk001-dn-la/AppData/Roaming/Sublime Text 3/Packages/User/JavaScript.sublime-build",
+		"/X/assets/js/jquery-3.3.1 (1).js",
+		"/X/modules/xephang/danhsachxephang_viewbacsy/call_info.php",
+		"/X/nodejs/config.js",
+		"/D/xampp/htdocs/his/modules/xephang/nhanphieu/controller_goiloa.php",
+		"/D/xampp/htdocs/his/modules/login/login_controler.php",
+		"/C/Users/tmk001-dn-la/Desktop/indexXH.php",
+		"/C/Users/tmk001-dn-la/Desktop/index.php",
+		"/W/modules/lamsang/chidinhkham/data_benhnhanby_idluotkham.php",
+		"/W/modules/lamsang/chidinhkham/index.php",
+		"/W/modules/lamsang/chidinhkham/check_phongban.php",
+		"/W/modules/lamsang/chidinhkham/check_xoa.php",
+		"/W/modules/lamsang/chidinhkham/check_thanhtoan.php",
+		"/W/modules/lamsang/benh_an/phieuvaovien.php",
+		"/X/nodejs/serverListenBarcode.js",
+		"/X/modules/xephang/danhsachxephang_viewbenhnhan2/index.php",
+		"/X/modules/xephang/nhanphieu/index.php",
+		"/D/xampp/htdocs/his/class/class.sqlserver.php"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 109.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "tools-his.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"X:\\tools-his.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 272.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

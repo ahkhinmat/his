@@ -1,0 +1,15 @@
+﻿
+mota=Mô tả
+sudung=Sử dụng
+ghichu=Ghi chú
+stt=STT
+maBN=Mã BN
+hoten=Họ tên
+tuoi=Tuổi
+gioitinh=Giới
+sua_thanhcong=Sửa dữ liệu thành công
+sua_khongthanhcong=Sửa dữ liệu không thành công
+luu_thanhcong=Lưu dữ liệu thành công
+luu_khongthanhcong=Lưu dữ liệu không thành công
+xoa_thanhcong=Xóa dữ liệu thành công
+xoa_khongthanhcong=Xóa dữ liệu không thành công

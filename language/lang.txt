@@ -1,0 +1,3 @@
+﻿
+thoat=Thoát~Logout
+dangnhap=Đăng nhập~Login

@@ -1,0 +1,1 @@
+http://192.168.2.104:81/giaidoan2/resource.php?module=web_services&function=printer_check&action=index&id_form=111&public=1&printers=1

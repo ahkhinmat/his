@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* images Document */
+#ExpandMenu{	
+	width:260px;
+}
+#ExpandMenu ul li{
+	list-style:none;
+	color:#000;	
+	text-shadow: 1px 1px 1px #fff, 0 0 0 #000000, 1px 1px 1px #fff;	
+	-webkit-font-smoothing: subpixel-antialiased; /* or antialiased; */
+	-webkit-text-stroke: .10pt black; /* or 0.01em might be better */
+	margin-left:15px;
+	line-height:17px;
+	border-bottom:1px dotted #000;
+	margin-bottom:3px;
+	padding-bottom:5px;
+	width:90%;
+	cursor:pointer;	
+	font-size:13px;
+	background:url(../images/form_main/icon/aqua_buttons.png) 0px 3px no-repeat;
+	text-indent:17px;	 			
+}
+#ExpandMenu ul li:hover{	 
+	text-shadow: 1px 1px 1px #000, 0 0 0 #000000, 1px 1px 1px #000;
+/*	border-bottom:#FFF dotted 1px;	
+	-webkit-transition:border 20s ease-in-out;
+    -moz-transition:border 20s ease-in-out;
+    -o-transition:border 20s ease-in-out;
+    -ms-transition:border 20s ease-in-out;
+    transition:border 20s ease-in-out;*/	
+	-webkit-transition:text-shadow 0.5s ease-in-out;
+    -moz-transition:text-shadow 0.5s ease-in-out;
+    -o-transition:text-shadow 0.5s ease-in-out;
+    -ms-transition:text-shadow 0.5s ease-in-out;
+    transition:text-shadow 0.5s ease-in-out;    
+  
+}
+#ExpandMenu ul{ 
+	margin-top:2px;
+	margin-left:0px;
+	padding-left:0;
+	text-indent:10px;
+	display:none;	
+}
+.button_green{
+	background:url(../images/expand_menu/button_green.png) no-repeat;
+	width:220px;
+	height:50px;
+	background-size:contain;
+	cursor:pointer;		 
+}
+.button_green span.title,.button_blue span.title{	
+	color:#fff;	
+	text-shadow: 1px 1px 1px #222121, 0 0 0 #222121, 1px 1px 1px #222121;
+	-webkit-font-smoothing: subpixel-antialiased; /* or antialiased; */
+	-webkit-text-stroke: .10pt black; /* or 0.01em might be better */
+	font-size:13px!important;
+}
+.plus_green{
+	background: url(../images/expand_menu/plus_green.png) no-repeat ;
+	width:inherit;
+	height:inherit;
+	background-size:15%;
+	display:inline-block;  
+}
+.minus_green{
+	background: url(../images/expand_menu/minus_green.png) no-repeat ;
+	width:inherit;
+	height:inherit;
+	background-size:15%;  
+}
+.button_blue{
+	background:url(../images/expand_menu/button_blue.png) no-repeat;
+	width:220px;
+	height:50px;
+	background-size:contain;
+	cursor:pointer;	
+}
+.plus_blue{
+	background: url(../images/expand_menu/plus_blue.png) no-repeat ;
+	width:inherit;
+	height:inherit;
+	background-size:15%; 	  
+}
+.minus_blue{
+	background: url(../images/expand_menu/minus_blue.png) no-repeat ;
+	width:inherit;
+	height:inherit;
+	background-size:15%;   
+}
+ 
+ 

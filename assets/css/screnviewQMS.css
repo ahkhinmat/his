@@ -1,0 +1,92 @@
+  .ui-jqgrid tr.jqgrow td {
+      font-size:5.5em; /*  quan trọng để chỉnh font lưới*/
+    }
+
+    .ui-jqgrid tr.ui-row-ltr td, .ui-jqgrid tr.ui-row-rtl td {
+      border-bottom: 1px solid #E1E1E1;/*tô màu đường xen kẻ dòng*/
+      padding: 0px 0px 2px;/*định ko  có khoảng trắng khi tự chạy select row*/
+      border-color: #E1E1E1 !important;/*tô màu đường xen kẻ dòng*/
+      white-space: pre-line !important;/* tự xuống dòng nếu ko đủ chỗ trên lưới*/         
+    }   
+    
+    .ui-jqgrid .ui-jqgrid-labels th,.ui-jqgrid-title-rtl {
+      border-right: 1px solid #E1E1E1!important;
+      text-align: center!important;
+      font-size: 35px;/*chỉnh label của column lưới*/
+      
+    }
+    .gioden{
+      background: #d9f970;
+      text-align: center;
+    }
+    .nhapnhay2 {
+    font-style: bold;
+    font-size:50px;
+    color: blue;
+    -webkit-animation: hightlight2 1s infinite alternate;
+    -moz-animation: hightlight5 1s infinite alternate;
+    z-index: 1000000;
+    animation: hightlight 2s linear infinite;
+    }
+    @keyframes hightlight {
+      50% {
+        opacity: 0;
+      }
+    } 
+
+    .thongbaoB,.hienthi-thongbao {
+    text-align: center;
+    width: 100%;
+    height:100%;
+    margin:0px; 
+    position: absolute;
+    z-index:2;  
+    font-size: 5.1em;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+    } 
+    .call{
+      border:1px solid #ccc;
+      height: 100%;
+      text-align: center !important;
+      background: -webkit-radial-gradient(rgb(219, 228, 235), rgb(220, 255, 113));
+      background: radial-gradient(rgb(219, 228, 235), rgb(220, 255, 113));
+        text-align: center;
+      vertical-align: middle;
+    }
+    .CanhBao{
+        width: 100%;
+              height:100%;
+        margin:6px; 
+        position: absolute;
+        z-index:6;  
+        font-size: 5.7em;
+        font-weight: bold;
+        font-family: Helvetica;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+        text-align: center;
+    }
+    .clock_count{
+      color:blue;
+      font-size:27px;
+      font-weight: bold;
+      width: 100px;
+      float: left;
+      position: absolute;
+    }
+    .wrapper{
+   
+      width: 100%;
+      height:100%;
+      background-size: 100%!important;
+
+     
+    } 
+    .videoFix{
+      padding-top: 230px;
+      margin-left: 1000px;
+      border:1px solid #ccc;
+      text-align: center;
+    vertical-align: middle;
+    }
