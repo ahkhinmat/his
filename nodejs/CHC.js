@@ -59,7 +59,8 @@ function PushToMySQL_DMBN(benhnhan_id,mayte,tenbenhnhan,diachi,gioitinh,namsinh,
         });
         var post2  = {
             MaYte:mayte,
-            MatKhau:'123'
+            MatKhau:'123',
+            DoiMatKhau:0
          };
         var query2 = connection_mysql.query('INSERT INTO ksk_users SET ?', post2, function (error, results, fields) {
             if (error) {
