@@ -38,8 +38,9 @@ connection_mysql.connect();
  * hết cấu hình mysql
  */
 
-GetDataReportHis_DMBN ();
-function PushToMySQL_DMBN(benhnhan_id,mayte,tenbenhnhan,diachi,gioitinh,namsinh,ngaysinh){
+//GetDataReportHis_DMBN ();
+loopHopDong();
+function PushToMySQL_DMBN(benhnhan_id,mayte,tenbenhnhan,diachi,gioitinh,namsinh,ngaysinh,sodienthoai){
        var post  = {
                             BenhNhan_Id:benhnhan_id,
                             MaYte:mayte,
@@ -47,7 +48,8 @@ function PushToMySQL_DMBN(benhnhan_id,mayte,tenbenhnhan,diachi,gioitinh,namsinh,
                             DiaChi:diachi,
                             GioiTinh:gioitinh,
                             NamSinh:namsinh,
-                            NgaySinh:ngaysinh
+                            NgaySinh:ngaysinh,
+                            SoDienThoai:sodienthoai
                          };
         var query = connection_mysql.query('INSERT INTO ksk_dm_benhnhan SET ?', post, function (error, results, fields) {
             if (error) {
@@ -287,8 +289,44 @@ function PushToMySQL_Thuoc(
 }
 
 /** end [CHC_GetKetQuaXN]*/
-function GetDataReportHis_DMBN () {
-    var hopdong_id_p=1930;
+function loopHopDong(){
+    var connection = new sql.Connection(config, function(err) {
+        if(err === null) {  // keets noois thành công
+            var request = new sql.Request(connection);
+            request.input('HopDong_Id', sql.Int,1);
+            request.execute('[CHC_GetHopDong]', function(err, recordsets, returnValue) {
+            if(err === undefined){//ko lỗi
+                mang = recordsets[0];// có dữ liệu
+                if(mang.length>0){
+                    for(var i=0;i<mang.length;i++){
+                        mangtam=mang[i];
+                         try {
+                                   //console.log( i+' -- '+  mangtam ["HopDong_ID"]+"   - -  "+mangtam["TenCongTy"]     );
+                                   PushToMySQL_HD(
+                                    mangtam ["HopDong_ID"],
+                                    mangtam["So_HD"],
+                                    mangtam["NgayHieuLuc_HD"],
+                                    mangtam["TenCongTy"],
+                                    mangtam["NgayTao_HD"],
+                                    );
+                                   GetDataReportHis_DMBN(mangtam ["HopDong_ID"]);        
+                                     
+                            } catch (error) {
+                                console.log("lỗi CHC_GetHopDong "+error);
+                            }
+                        }
+                }
+            }else{
+                    console.log("ko co du lieu CHC_GetBN");
+                }
+            });
+        }else{
+            console.log("ko co kết nối dc CSDL");
+        }
+    })
+
+}
+function GetDataReportHis_DMBN (hopdong_id_p) {
     var connection = new sql.Connection(config, function(err) {
     if(err === null) {  // keets noois thành công
         var request = new sql.Request(connection);
@@ -313,7 +351,8 @@ function GetDataReportHis_DMBN () {
                             mangtam["DiaChi"],
                             mangtam["GioiTinh"],
                             mangtam["NamSinh"],
-                            mangtam["NgaySinh"]
+                            mangtam["NgaySinh"],
+                            mangtam["SoDienThoai"],
                             );
                         }catch(err){
                             console.log("lỗi insert mysql CHC_GetBN " +err);
@@ -330,32 +369,32 @@ function GetDataReportHis_DMBN () {
  * CHC_GetHopDong
  * 
  */
-        var mang2='';
-        request.input('HopDong_Id', sql.Int,hopdong_id_p);
-        request.execute('[CHC_GetHopDong]', function(err, recordsets, returnValue) {
-            if(err === undefined){//ko lỗi
-                mang2 = recordsets[0];// có dữ liệu
-                if(mang2.length>0){
+        // var mang2='';
+        // request.input('HopDong_Id', sql.Int,hopdong_id_p);
+        // request.execute('[CHC_GetHopDong]', function(err, recordsets, returnValue) {
+        //     if(err === undefined){//ko lỗi
+        //         mang2 = recordsets[0];// có dữ liệu
+        //         if(mang2.length>0){
                   
-                    for(var i=0;i<mang2.length;i++){
-                        mangtam=mang2[i];
-                        try {
-                             PushToMySQL_HD(
-                                    mangtam ["HopDong_ID"],
-                                    mangtam["So_HD"],
-                                    mangtam["NgayHieuLuc_HD"],
-                                    mangtam["TenCongTy"],
-                                    mangtam["NgayTao_HD"],
-                                    );
-                        } catch (error) {
-                            console.log("lỗi insert mysql CHC_GetHopDong "+error);
-                        }
-                    }
-                }
-            }else{
-                    console.log("ko co du lieu  CHC_GetHopDong");
-                }
-            });
+        //             for(var i=0;i<mang2.length;i++){
+        //                 mangtam=mang2[i];
+        //                 try {
+        //                      PushToMySQL_HD(
+        //                             mangtam ["HopDong_ID"],
+        //                             mangtam["So_HD"],
+        //                             mangtam["NgayHieuLuc_HD"],
+        //                             mangtam["TenCongTy"],
+        //                             mangtam["NgayTao_HD"],
+        //                             );
+        //                 } catch (error) {
+        //                     console.log("lỗi insert mysql CHC_GetHopDong "+error);
+        //                 }
+        //             }
+        //         }
+        //     }else{
+        //             console.log("ko co du lieu  CHC_GetHopDong");
+        //         }
+        //     });
         // //       /**End CHC_GetHopDong DM Hợp đồng */
 
 
@@ -408,21 +447,21 @@ function GetDataReportHis_DMBN () {
                             mangtam=mang4[i];
                              console.log(i+"-YeuCauChiTiet_Id-"+mangtam["YeuCauChiTiet_Id"]+ "-BenhNhan_Id-" +mangtam["BenhNhan_Id"]);
                           
-                            if(mangtam["JsonKetQua"]){
-                                try {
-                                    const obj = JSON.parse(mangtam["JsonKetQua"]);
-                                        if(obj.Images){
-                                            for (let index = 0; index < obj.Images.length; index++) {
-                                                countImages++;
-                                                console.log(obj.Images[index]["PathLink"]);
-                                                fs.createReadStream(obj.Images[index]["PathLink"]).pipe(fs.createWriteStream('./hinh_cls/'+(obj.Images[index]["File_Name"])));
-                                            }
-                                         }
-                                } catch (error) {
-                                    console.log("not JSON"+error);
-                                }
-                            }         
-                            console.log("countImages "+countImages);
+                            // if(mangtam["JsonKetQua"]){
+                            //     try {
+                            //         const obj = JSON.parse(mangtam["JsonKetQua"]);
+                            //             if(obj.Images){
+                            //                 for (let index = 0; index < obj.Images.length; index++) {
+                            //                     countImages++;
+                            //                     console.log(obj.Images[index]["PathLink"]);
+                            //                     fs.createReadStream(obj.Images[index]["PathLink"]).pipe(fs.createWriteStream('./hinh_cls/'+(obj.Images[index]["File_Name"])));
+                            //                 }
+                            //              }
+                            //     } catch (error) {
+                            //         console.log("not JSON"+error);
+                            //     }
+                            // }         
+                           // console.log("countImages "+countImages);
                             try {
                                 PushToMySQL_KetQua(
                                 mangtam ["BenhNhan_Id"],
